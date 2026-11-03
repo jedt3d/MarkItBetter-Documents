@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>困ったときと機能の提供状況 | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/troubleshooting.html" lang="en" hreflang="en">English</a><a href="../th/troubleshooting.html" lang="th" hreflang="th">ไทย</a><a href="../ja/troubleshooting.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html" aria-current="page"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html" aria-current="page"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">15 / 15</p><h1>困ったときと機能の提供状況</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#キーが予想と違う動作をする">キーが予想と違う動作をする</a></li><li><a href="#ファイルを開けない保存できない">ファイルを開けない・保存できない</a></li><li><a href="#ローカル画像やリンクが見つからない">ローカル画像やリンクが見つからない</a></li><li><a href="#文字が詰まる設定が反映されない">文字が詰まる・設定が反映されない</a></li><li><a href="#コードに色が付かない">コードに色が付かない</a></li><li><a href="#公開済みと今後の機能">公開済みと今後の機能</a></li><li><a href="#調査できる報告を用意する">調査できる報告を用意する</a></li></ul></nav></details><article class="prose" data-chapter="troubleshooting"><p>まずバージョン、モード、小さな再現例を確認します。「v0.49.0 の EDIT で Link スニペット挿入後」の方が、「キーボードが止まった」より原因を調べやすくなります。</p>
+<h2 id="キーが予想と違う動作をする">キーが予想と違う動作をする</h2>
+<p>メニューや検索を閉じ、文書へフォーカスを戻します。Esc はスニペットを終えてから PREVIEW へ戻る場合があります。フィールド終了後の Tab はインデントすることがあります。PREVIEW の <code>i</code> は可能なら選択を使い、なければ末尾へ移るため、正確な単語の変更にはダブルクリックを使います。</p>
+<p><a href="shortcuts.html#focus-sensitive-keys">操作対象別のキー</a>、OS の修飾キー処理、IME を確認してください。Replace All の繰り返しや大きな構造変更の前に、例を保存しておきます。</p>
+<h2 id="ファイルを開けない保存できない">ファイルを開けない・保存できない</h2>
+<p>テキストファイルか、保存先が書込み可能かを確認します。画像、PDF、アーカイブ、動画を Markdown として開かないでください。無題の内容には Save As の保存先が必要です。MIB の外で移動・削除した場合は実際のパスを確認します。</p>
+<p>保存エラー時はエディターを開いたままにします。大切な文字を安全な場所へコピーし、エラーを残し、保存済みのコピーを確認するまで buffer を破棄しません。成功後にコピーを開き直し、ディスクの内容を確認することもできます。</p>
+<h2 id="ローカル画像やリンクが見つからない">ローカル画像やリンクが見つからない</h2>
+<p>文書を実際のプロジェクトへ保存し、素材を同じディレクトリかその配下に置き、名前の大小文字と Markdown を確認します。相対パスは文書の場所が基準です。初回 Save As 後に解決しなければ文書を開き直してください。</p>
+<p>公開版の画像アクセス範囲は、文書ディレクトリの外を拒否する場合があります。報告には小さな <code>.md</code> と無害な素材を一つのフォルダーに入れ、単純な相対パスを使います。リンクの問題を示すために私的なプロジェクト全体を送る必要はありません。</p>
+<h2 id="文字が詰まる設定が反映されない">文字が詰まる・設定が反映されない</h2>
+<p><a href="preferences.html">Preferences</a> のモード制限を確認します。Editor の行間と Preview CSS は別です。書体変更後は実際の日本語・タイ語を確認し、文字より小さい固定行高を避けます。</p>
+<p>読み込んだ CSS がテーマを上書きする場合は <strong>Clear CSS</strong> で基準を確認してから必要なルールを戻します。別ファイルで幅が戻るのはセッション上書きの仕様です。固定テーマが system/light/dark に追従しなければ <strong>Match system appearance</strong> を確認してください。</p>
+<h2 id="コードに色が付かない">コードに色が付かない</h2>
+<p>フェンスの言語名を確認します。未知の grammar は意図的にプレーン表示し、対応言語も本文の後から色が付く場合があります。<strong>Preferences → Code</strong> で配色を選びます。HTML の script や能動的な widget は、周囲の Markdown が正しくても制限されます。</p>
+<h2 id="公開済みと今後の機能">公開済みと今後の機能</h2>
+<table>
+<thead>
+<tr>
+<th>状態</th>
+<th>期待できるもの</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>公開版 v0.49.0</td>
+<td>PREVIEW/EDIT、ローカルテキスト、Favorites/Files、Quick Open/Outline/palette、slash fields、表編集、対応記法、Preferences とスタイル</td>
+</tr>
+<tr>
+<td>レビュー済み Mermaid 開発</td>
+<td>中央フレーム、構文強調 Source、アプリ領域の最大化・復元、図の種類と多言語文字組み。v0.49.0 には未搭載</td>
+</tr>
+<tr>
+<td>次のビューアー改訂</td>
+<td>Fit All、zoom/pan、ホバーで表示する操作を調整中。統合・検証も未完了</td>
+</tr>
+<tr>
+<td>公開版の範囲外</td>
+<td>独自 Smart Snippets、任意の Mermaid 拡張、wiki-link/callout/math、その他未発表の機能</td>
+</tr>
+</tbody></table>
+<p>v0.49.0 で Mermaid がコードとして見えるのは想定どおりです。<a href="mermaid.html">Mermaid の章</a>で準備と互換性を学び、実際の release notes を見てから利用可能と判断します。</p>
+<h2 id="調査できる報告を用意する">調査できる報告を用意する</h2>
+<p>アプリ版、OS とアーキテクチャー、モード、手順、期待結果、実際の結果、見えるエラーを記録します。問題が残る最小の文書へ減らしてください。文字組みなら実際の文字と preset、図なら正確なフェンスと設定を残します。</p>
+<p>公式サポート経路を使い、秘密情報、個人のパス、token、私的な文書内容を除いてください。修正版が公開されたら公式経路で更新し、同じ最小例を再実行します。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="shortcuts.html"><span>前の章</span>ショートカット</a></nav><p class="source-download"><a href="../../content/ja/15-troubleshooting.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

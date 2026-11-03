@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>対応する Markdown 記法 | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/markdown.html" lang="en" hreflang="en">English</a><a href="../th/markdown.html" lang="th" hreflang="th">ไทย</a><a href="../ja/markdown.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html" aria-current="page"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html" aria-current="page"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">08 / 15</p><h1>対応する Markdown 記法</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#日常的なソース">日常的なソース</a></li><li><a href="#リンク画像アンカー">リンク・画像・アンカー</a></li><li><a href="#mib-の小さな拡張">MIB の小さな拡張</a></li><li><a href="#コードと-html">コードと HTML</a></li><li><a href="#共有前に互換性を確かめる">共有前に互換性を確かめる</a></li></ul></nav></details><article class="prose" data-chapter="markdown"><p>公開版が扱うのは CommonMark、GFM、および明示された小さな拡張です。既存の Markdown の知識を使えますが、他のエディターの拡張がそのまま MIB にもあるとは限りません。</p>
+<h2 id="日常的なソース">日常的なソース</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown">## 設定
+
+**太字**、*斜体*、`inline code`、~~古い記述~~を使います。
+
+&gt; 判断の近くに理由を残します。
+
+1. ノートを開く。
+2. 変更する。
+
+- [ ] サンプルを確認する
+- [x] 文書を保存する</code></pre></div><p>見出し、リスト、引用、リンク、画像、フェンスやインデントによるコード、水平線は通常の Markdown です。GFM はパイプ表、取り消し線、タスクリスト、オートリンクを追加します。<a href="preview.html#interactive-task-lists">タスク</a>は PREVIEW からも切り替えられます。</p>
+<h2 id="リンク画像アンカー">リンク・画像・アンカー</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown">[外部資料](https://example.com)
+[別のノート](./decisions.md)
+[Configuration 節](#configuration)
+![画像の説明](./images/architecture.svg)</code></pre></div><p>相対参照を使う前に現在の文書を保存してください。ローカル画像は文書と同じディレクトリか、その配下に置きます。公開版の画像アクセスには範囲があり、上位へ抜けるパスは失敗する場合があります。最初の Save As 後に解決しなければ文書を開き直します。</p>
+<p>見出しのスラッグはタイ語や日本語の文字を保ち、適切な文字を小文字にし、記号を除き、空白をハイフンにします。固有の見出し名にすると手書きのリンクが安定します。HTTP/HTTPS はブラウザー、相対 Markdown リンクはアプリ内で開きます。</p>
+<h2 id="mib-の小さな拡張">MIB の小さな拡張</h2>
+<table>
+<thead>
+<tr>
+<th>ソース</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>H~2~O</code></td>
+<td>下付き</td>
+</tr>
+<tr>
+<td><code>x^2^</code></td>
+<td>上付き</td>
+</tr>
+<tr>
+<td><code>[[Ctrl + S]]</code></td>
+<td>PREVIEW のキーチップ</td>
+</tr>
+<tr>
+<td><code>:smile:</code></td>
+<td>対応する絵文字ショートコード</td>
+</tr>
+<tr>
+<td><code>[^note]</code> と <code>[^note]: text</code></td>
+<td>脚注参照と定義</td>
+</tr>
+</tbody></table>
+<p>キーチップは文字列をそのまま表示し、内部に Markdown を入れ子にしません。閉じていない、または空のチップは通常の文字です。脚注には別の場所の定義を使い、<code>^[text]</code> のインライン形式は使いません。PREVIEW が整形する拡張でも、エディター上は通常のソース表示の場合があります。</p>
+<h2 id="コードと-html">コードと HTML</h2>
+<p>コードフェンスの言語名が構文強調を選びます。<code>js</code>、<code>ts</code>、<code>py</code>、<code>sh</code> などの一般的な別名も使えます。未対応の言語は読みやすいプレーンコードのままです。<a href="preferences.html#code">Preferences → Code</a> で配色を選べます。</p>
+<p><code>&lt;details&gt;</code> と <code>&lt;summary&gt;</code> は折りたたみに使えます。HTML は無害化され、script やイベントハンドラーが除かれ、能動的な埋込みも制限されます。任意の JavaScript、iframe、Web ウィジェットが動くことを前提にしないでください。</p>
+<p>インライン SVG は公開版の安全性制約内で使えます。スクリプト付き SVG、<code>foreignObject</code>、外部参照、一部の <code>&lt;use&gt;</code> ベースの描画は残りません。構造を展開した受動的なベクター出力の方が共有しやすくなります。</p>
+<h2 id="共有前に互換性を確かめる">共有前に互換性を確かめる</h2>
+<p>Mermaid は <strong>今後の機能</strong>であり、v0.49.0 はフェンスをコードとして表示します。数式、wiki-link、callout/admonition は、この公開版の記法には含まれません。このガイドの Web 表示だけで、インストール済み MIB も同じ拡張を扱えると判断しないでください。</p>
+<p>共有ノートは通常の Markdown から始め、PREVIEW を確認し、チームの別のツールでも代表的なファイルを開きます。新しいレンダラーや拡張を試すときは元のソースを保管します。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="tables.html"><span>前の章</span>Markdown の表</a><a href="mermaid.html"><span>次の章</span>Mermaid ビューアー</a></nav><p class="source-download"><a href="../../content/ja/08-markdown.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>MIB のワークフロー | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/workflow.html" lang="en" hreflang="en">English</a><a href="../th/workflow.html" lang="th" hreflang="th">ไทย</a><a href="../ja/workflow.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html" aria-current="page"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html" aria-current="page"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">02 / 15</p><h1>MIB のワークフロー</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#enter-the-source-where-you-need-it">必要な位置からソースへ入る</a></li><li><a href="#読む状態へ戻る">読む状態へ戻る</a></li><li><a href="#保存の仕組み">保存の仕組み</a></li><li><a href="#一連の操作を試す">一連の操作を試す</a></li></ul></nav></details><article class="prose" data-chapter="workflow"><p>PREVIEW は読むための状態、EDIT は Markdown ソースを扱う状態です。直したい一文だけ編集して、すぐに読む作業へ戻れます。</p>
+<h2 id="enter-the-source-where-you-need-it">必要な位置からソースへ入る</h2>
+<p>正確な修正には、<strong>PREVIEW の単語をダブルクリック</strong>します。MIB が EDIT に切り替わり、対応するソースの単語を選択します。空白のダブルクリックでは、直前の単語に近い位置へ移動します。リンクやリストなど、記号がプレビューに見えない部分で便利です。</p>
+<p>公開版のプレビューキーには、次の違いがあります。</p>
+<table>
+<thead>
+<tr>
+<th>PREVIEW での操作</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>テキストを選択して <code>i</code></td>
+<td>選択テキストに対応するソース位置の直後で編集</td>
+</tr>
+<tr>
+<td>有効な選択なしで <code>i</code></td>
+<td>文書末尾で編集</td>
+</tr>
+<tr>
+<td><code>a</code></td>
+<td>文書末尾で編集</td>
+</tr>
+<tr>
+<td>パレットの <strong>Switch to EDIT</strong></td>
+<td>エディターに残っている選択・カーソル位置で再開</td>
+</tr>
+</tbody></table>
+<p>狙った単語を直すならダブルクリックを使います。表示結果からソースの行番号を推測する必要はありません。</p>
+<h2 id="読む状態へ戻る">読む状態へ戻る</h2>
+<p>通常の EDIT で <strong>Esc</strong> を押すと、保存先がある文書を保存し、カーソルのあるブロック付近の PREVIEW へ戻ります。</p>
+<p>ただし Esc は、現在の操作を先に終了します。スラッシュメニューがあれば閉じ、スニペットの入力フィールドが有効ならその移動を終了し、検索欄にいる場合は検索パネルを閉じます。その操作を終えてから、もう一度 Esc で PREVIEW へ戻ります。<a href="snippets.html">スニペット</a>と<a href="navigation.html">移動・検索</a>も参照してください。</p>
+<h2 id="保存の仕組み">保存の仕組み</h2>
+<p>保存先のある文書は、入力が三秒止まったとき、EDIT から PREVIEW へ移るとき、編集ウィンドウがフォーカスを失ったときに保存されます。ファイルの移動や共有前には <strong>Command+S / Ctrl+S</strong> も使えます。</p>
+<p>無題の内容は、保存先を選ぶまでメモリー上にあります。<strong>Save As…</strong> または保存キーでファイルダイアログを完了してください。モード変更が勝手にファイル名を決めることはありません。未保存の内容を閉じると保存・破棄・キャンセルを選べます。保存に失敗した場合は、確認できるコピーができるまで内容を残します。</p>
+<h2 id="一連の操作を試す">一連の操作を試す</h2>
+<p>次の文書を作り、<code>release-notes.md</code> として保存します。</p>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown"># リリースノート
+
+読み手を中心に考える。
+
+- [ ] サンプルを確認する
+- [ ] 表現を見直す</code></pre></div><p>PREVIEW に戻り、直したい単語をダブルクリックして変更し、Esc を押します。表示結果と保存内容を確かめてから、PREVIEW のタスクを切り替えてください。ソースの標準的な <code>[ ]</code> / <code>[x]</code> が書き換わります。</p>
+<p>長時間の執筆には <a href="preferences.html#focus-and-writing-comfort">Focus と Typewriter の設定</a>を調整できます。作業環境を変えても、文書は持ち運べる通常の Markdown のままです。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="install.html"><span>前の章</span>インストール</a><a href="files.html"><span>次の章</span>ファイルとフォルダー</a></nav><p class="source-download"><a href="../../content/ja/02-workflow.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

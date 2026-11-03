@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>Markdown のまま表を編集する | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/tables.html" lang="en" hreflang="en">English</a><a href="../th/tables.html" lang="th" hreflang="th">ไทย</a><a href="../ja/tables.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html" aria-current="page"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html" aria-current="page"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">07 / 15</p><h1>Markdown のまま表を編集する</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#表を作る">表を作る</a></li><li><a href="#表のポップアップを開く">表のポップアップを開く</a></li><li><a href="#tab-で行を追加する">Tab で行を追加する</a></li><li><a href="#データを守って編集する">データを守って編集する</a></li></ul></nav></details><article class="prose" data-chapter="tables"><p>MIB は GFM のパイプ表をテキストとして扱います。構造操作で行・列を変更すれば、すべての区切りを手で動かす必要がなく、PREVIEW で読み手の見え方を確認できます。</p>
+<h2 id="表を作る">表を作る</h2>
+<p>スラッシュメニューの <strong>Table</strong> を選んでフィールドを埋めるか、次を貼り付けます。</p>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown">| 項目 | 担当 | 状態 |
+| :--- | :--- | ---: |
+| ユーザーガイド | Docs | 下書き |
+| API ノート | Platform | 準備完了 |</code></pre></div><div class="example-result" data-rendered-example><p>表示例</p><table>
+<thead>
+<tr>
+<th align="left">項目</th>
+<th align="left">担当</th>
+<th align="right">状態</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ユーザーガイド</td>
+<td align="left">Docs</td>
+<td align="right">下書き</td>
+</tr>
+<tr>
+<td align="left">API ノート</td>
+<td align="left">Platform</td>
+<td align="right">準備完了</td>
+</tr>
+</tbody></table>
+</div><p>区切り行のコロンが配置を決めます。<code>:---</code> は左、<code>:---:</code> は中央、<code>---:</code> は右寄せです。プレビューの読み幅より広い表は、その領域内で横スクロールできます。</p>
+<h2 id="表のポップアップを開く">表のポップアップを開く</h2>
+<p>表にカーソルを置いて <strong>Command+/ / Ctrl+/</strong> を押します。</p>
+<ul>
+<li><strong>Insert Row Above / Below</strong>：上または下に行を追加。</li>
+<li><strong>Insert Column Left / Right</strong>：左右に列を追加。</li>
+<li><strong>Delete Row / Column</strong>：行または列を削除。</li>
+</ul>
+<p>矢印と Enter、またはクリックで選び、Esc で閉じます。表の直前・直後の空行で開くと、近いセルへカーソルが移ることがあります。構造を変える前に対象セルを確認してください。</p>
+<p>見出し行と区切り行は Delete Row で消せません。最後の一列を削除すると表全体が消えます。構造変更は一回の Undo で戻せ、配置のコロンを保ったまま編集した表をそろえます。</p>
+<h2 id="tab-で行を追加する">Tab で行を追加する</h2>
+<p><strong>最後のデータ行の最後のセル</strong>で Tab を押すと、新しい行を追加し、その先頭フィールドを選択します。入力して各フィールドを進み、末尾からさらに行を追加できます。</p>
+<p>この動作ですべての既存セルが表計算式の移動になるわけではありません。有効なスニペットには専用の Tab/Shift+Tab があり、その他の位置では Tab がインデントする場合があります。フィールドが有効でなければ、カーソルを移すかポップアップを使います。</p>
+<p>追加直後の行はソース上でそろっていない場合があります。<strong>Format Document</strong> で再整形してください。文書全体の整形と、ポップアップによる表だけの即時整形は別の処理です。</p>
+<h2 id="データを守って編集する">データを守って編集する</h2>
+<p>識別子にはインラインコードを使い、文字として必要なパイプは <code>\|</code> とエスケープします。記号を含むコードやリンクを変更したら PREVIEW を確認します。等幅フォントでも複数の文字体系では幅が異なるため、ソースの空白数より表示された意味を重視してください。</p>
+<p>数値表は表記を統一して数値列を右寄せにします。MIB は Markdown エディターであり、表の数式計算や財務数値の更新は行いません。計算を管理するツールで値を確定し、文書には説明したい値を記録します。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="snippets.html"><span>前の章</span>スニペット</a><a href="markdown.html"><span>次の章</span>対応する記法</a></nav><p class="source-download"><a href="../../content/ja/07-tables.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>実務で使うレシピ | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/recipes.html" lang="en" hreflang="en">English</a><a href="../th/recipes.html" lang="th" hreflang="th">ไทย</a><a href="../ja/recipes.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html" aria-current="page"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html" aria-current="page"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">13 / 15</p><h1>実務で使うレシピ</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#読み流せる-readme">読み流せる README</a></li><li><a href="#短い設計判断の記録">短い設計判断の記録</a></li><li><a href="#証拠を残すリリース確認">証拠を残すリリース確認</a></li><li><a href="#保守できる-api-ノート">保守できる API ノート</a></li></ul></nav></details><article class="prose" data-chapter="recipes"><p>通常の Markdown と公開済みの編集操作で使える出発点です。コピーして事実を置き換え、PREVIEW を確認します。Mermaid はレンダラーを含むバージョンを使っている場合に追加してください。</p>
+<h2 id="読み流せる-readme">読み流せる README</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown"># ノートサービス
+
+プロジェクトノートを Markdown ファイルで保存します。
+
+## はじめに
+
+1. 設定例をコピーします。
+2. ローカル保存先を指定します。
+3. サービスを起動して health endpoint を確認します。
+
+## コマンド
+
+| 作業 | コマンド |
+| --- | --- |
+| チェック実行 | `npm test` |
+| ローカル起動 | `npm run dev` |
+
+## 参照
+
+- [判断記録](./decisions.md)
+- [Configuration](#configuration)
+
+## Configuration
+
+対応値と最小の例を記載します。</code></pre></div><p>コマンドは架空のプロジェクトの例で、MIB の CLI ではありません。実際にあるコマンドへ置き換えます。文章を磨く前に Outline で構造を確認します。</p>
+<h2 id="短い設計判断の記録">短い設計判断の記録</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown"># ADR: ノートを Markdown で保存する
+
+## 背景
+
+変更をバージョン管理でレビューし、オフラインで編集したい。
+
+## 判断
+
+ノートごとに通常の Markdown ファイルを使う。
+
+## 結果
+
+- エディターを変えても内容の変換は不要。
+- ファイル移動時は相対リンクに注意する。
+- 描画拡張はチームで合意する。
+
+## レビュー
+
+- [ ] 制約をチームと確認する
+- [ ] 実装の議論へリンクする</code></pre></div><p>記録が増えたら判断ごとにファイルを分け、関連記録をリンクします。図一枚にすべてを埋め込む必要はありません。<a href="mermaid.html">Mermaid の章</a>に今後の描画機能向けの flowchart、sequence、journey、ER の出発点があります。</p>
+<h2 id="証拠を残すリリース確認">証拠を残すリリース確認</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-markdown"># リリース確認
+
+- [ ] バージョンと変更内容を確認する
+- [ ] プロジェクトのチェックを実行する
+- [ ] 失敗と未解決事項を記録する
+- [ ] ユーザー向けノートを見直す
+- [ ] 配布するファイルを確認する
+
+## 検証
+
+| チェック | 結果 | 証拠 |
+| --- | --- | --- |
+| Unit tests | 未実施 | 実際の報告を追加 |
+| 操作確認 | 未実施 | 試したバージョンを記録 |</code></pre></div><p>コマンドが存在するだけで「未実施」を「合格」に変えないでください。実行後に更新します。PREVIEW のタスクを使いながらソースを通常の GFM に保ち、必要な証拠行を表のポップアップで追加できます。</p>
+<h2 id="保守できる-api-ノート">保守できる API ノート</h2>
+<p>method、path、目的を表にまとめ、endpoint ごとに見出しを付けて request、期待する response、エラー条件、バージョン前提を記載します。Link、Table、Code block、Collapsible が便利です。長い payload はコードフェンス、補足は <code>&lt;details&gt;</code> に入れます。</p>
+<p>共有前に保存、プレビュー、相対リンクを確認し、例のコマンドを対象システムで試します。MIB はノートを整形できますが、外部サービスの契約まで検証するものではありません。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="appearance.html"><span>前の章</span>表示と書体</a><a href="shortcuts.html"><span>次の章</span>ショートカット</a></nav><p class="source-download"><a href="../../content/ja/13-recipes.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

@@ -1,0 +1,14 @@
+{
+  "workflow": {
+    "title":{"en":"A Markdown workflow","th":"เวิร์กโฟลว์ Markdown","ja":"Markdown のワークフロー"},
+    "source":{"en":"flowchart TB\n  A[Write Markdown] --> B[Preview]\n  B --> C[Read the source]\n  C --> D[Inspect the diagram]","th":"flowchart TB\n  A[เขียน Markdown] --> B[ดูพรีวิว]\n  B --> C[อ่านต้นฉบับ]\n  C --> D[ตรวจแผนภาพ]","ja":"flowchart TB\n  A[Markdown を書く] --> B[プレビュー]\n  B --> C[ソースを読む]\n  C --> D[図を確認する]"}
+  },
+  "sequence": {
+    "title":{"en":"A small API exchange","th":"ลำดับเรียก API","ja":"小さな API 交換"},
+    "source":{"en":"sequenceDiagram\n  participant Client\n  participant API\n  Client->>API: GET /notes\n  API-->>Client: Notes and status","th":"sequenceDiagram\n  participant Client as ผู้เรียก\n  participant API as บริการ API\n  Client->>API: GET /notes\n  API-->>Client: บันทึกและสถานะ","ja":"sequenceDiagram\n  participant Client as クライアント\n  participant API as API\n  Client->>API: GET /notes\n  API-->>Client: ノートと状態"}
+  },
+  "journey": {
+    "title":{"en":"A short reading journey","th":"ขั้นตอนอ่านและตรวจ","ja":"読むためのジャーニー"},
+    "source":{"en":"journey\n  title Reading a note\n  section Review\n    Read: 5: Me\n    Check: 4: Me","th":"journey\n  title อ่านบันทึก\n  section ทบทวน\n    อ่าน: 5: ฉัน\n    ตรวจ: 4: ฉัน","ja":"journey\n  title ノートを読む\n  section レビュー\n    読む: 5: 自分\n    確認: 4: 自分"}
+  }
+}

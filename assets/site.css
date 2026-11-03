@@ -1,9 +1,4 @@
-/* Hallmark · shape: Index-First / Long Document · genre: editorial · theme: Editorial, adapted for the owner's IBM Plex system · job: read a power-user guide
- * hero: Settled · nav: persistent chapter index / compact masthead · footer: edition colophon · imagery: real MIB capture · signature: source and diagram share the page
- * axes: light/sans/chromatic-green · posture: restrained · fold: verified1280/1440/1920 · text-token contrast: minimum6.31:1 · v2.0.0 */
-/* Hallmark · pre-emit critique: P4 H4 E4 S5 R5 V4 · weakest: variety; compare a persistent reference rail with a spacious single-column edition */
-/* Hallmark · hero-review: subagent ship,3resolved · finish-review: subagent fix,3resolved by builder against recaptures · gap: none */
-/* Hallmark · waive 44c · the guide uses a real Mermaid source capture beside a column containing price and release status · align the full adjacent guide column rather than shrinking the source capture to the headline and navigation-link rectangle */
+/* Reference theme: approved palette and IBM Plex families; heading ratios1.2 / Thai-Japanese1.4. */
 @import url('./hallmark/tokens.css');
 @import url('./hallmark/base.css');
 
@@ -117,7 +112,8 @@ kbd{display:inline-block;font-family:var(--font-outlier);font-size:.85em;backgro
 .diagram-viewport.is-dragging{cursor:grabbing}
 .diagram-scene{position:absolute;transform-origin:0 0;user-select:none}
 .diagram-scene svg{width:760px;height:200px;max-width:none}
-.diagram-scene svg text{font-family:var(--font-body);fill:var(--color-ink);font-size:16px}
+.diagram-scene svg{font-size:16px}
+.diagram-scene svg text{font-family:var(--font-body);fill:var(--color-ink)}
 .diagram-scene svg .nodeLabel p{margin:0;line-height:1.5}
 .diagram-scene svg .node rect,.diagram-scene svg .node polygon{fill:var(--color-paper-2);stroke:var(--color-rule-2);stroke-width:1.5px}
 .diagram-scene svg .flowchart-link{fill:none;stroke:var(--color-ink);stroke-width:1.5px}

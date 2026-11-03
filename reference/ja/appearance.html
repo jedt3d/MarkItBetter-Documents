@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Markdown に慣れた開発者のための、ワークフロー、スニペット、図。"><title>表示と読みやすさ | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">本文へスキップ</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>日本語<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/appearance.html" lang="en" hreflang="en">English</a><a href="../th/appearance.html" lang="th" hreflang="th">ไทย</a><a href="../ja/appearance.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">ユーザーガイド</p><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html" aria-current="page"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。</p></noscript><details class="mobile-contents"><summary>章一覧</summary><nav aria-label="章一覧"><a class="guide-home-link" href="index.html">ガイドのホーム</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>インストール</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>ワークフロー</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>ファイルとフォルダー</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>移動と検索</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>正確な編集</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>スニペット</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown の表</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>対応する記法</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid ビューアー <span class="nav-status">今後の Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>プレビューとソース</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences 設定</span></a></li><li><a href="appearance.html" aria-current="page"><span class="chapter-number">12</span><span>表示と書体</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>実務のレシピ</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>ショートカット</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>困ったとき</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">12 / 15</p><h1>表示と読みやすさ</h1><p class="chapter-availability">公開版ガイド: v0.49.0</p></header><details class="page-outline"><summary>このページ</summary><nav><ul><li><a href="#ウィンドウ表示と文書テーマ">ウィンドウ表示と文書テーマ</a></li><li><a href="#content-width">内容幅</a></li><li><a href="#実際に読む文字で書体を選ぶ">実際に読む文字で書体を選ぶ</a></li><li><a href="#custom-preview-css">カスタム Preview CSS</a></li></ul></nav></details><article class="prose" data-chapter="appearance"><p>ウィンドウ、文書テーマ、プレビュー書体、コード配色は関連しますが別の設定です。すべてを同時に変えず、問題のある層を調整します。</p>
+<h2 id="ウィンドウ表示と文書テーマ">ウィンドウ表示と文書テーマ</h2>
+<p>toolbar の appearance 操作は <strong>system</strong>、<strong>light</strong>、<strong>dark</strong> を切り替えます。ツールバー、パネル、ダイアログはこの表示を使い、文書の領域はテーマシステムに従います。</p>
+<p>Preferences の <strong>Match system appearance</strong> は文書を解決された表示に追従させます。明示的な <strong>Theme</strong> を選ぶと追従はオフです。toolbar を切り替えても文書が変わらなければ、固定テーマを選んでいないか確認します。</p>
+<h2 id="content-width">内容幅</h2>
+<p>自動規則はウィンドウと開いているパネルを使います。</p>
+<table>
+<thead>
+<tr>
+<th>状態</th>
+<th>自動プレビュー幅</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>通常・狭いウィンドウ</td>
+<td>Wide、パネルの 90%</td>
+</tr>
+<tr>
+<td>広い・fullscreen、サイドパネルが 0 または 1</td>
+<td>Centered、60%</td>
+</tr>
+<tr>
+<td>広い・fullscreen、両パネルを表示</td>
+<td>Wide、90%</td>
+</tr>
+</tbody></table>
+<p>広いウィンドウの基準は画面幅の 75% です。手動の <strong>Content width</strong> は別ファイルを開くまで有効です。幅広の表や特定のノートには便利ですが、自動規則を永久に置き換える設定ではありません。</p>
+<p>今後の Mermaid ビューアーも、この実際の列幅を上限にします。文書の幅と図の寸法は連動するため、列を広げても小さい図を必ず引き伸ばすわけではありません。</p>
+<h2 id="実際に読む文字で書体を選ぶ">実際に読む文字で書体を選ぶ</h2>
+<p>Preview は IBM Plex と Noto を選べ、Noto には本文スタイルがあります。Editor のインストール済み等幅書体とは独立しています。英語見出しだけで判断せず、文書で使う文字体系を試します。</p>
+<p>このガイドは欧文に <strong>IBM Plex Sans</strong>、タイ語本文に <strong>IBM Plex Sans Thai Looped</strong>、大きなタイ語見出しに <strong>IBM Plex Sans Thai</strong>、日本語に <strong>IBM Plex Sans JP</strong>、コードに <strong>IBM Plex Mono</strong> と適切な補完書体を使います。本文の太字もループ付きタイ語を保ちます。見出し行間は最低 1.2 倍、日本語・タイ語は 1.4 倍です。</p>
+<p>これはガイドの文字組み方針であり、読者の全端末に同じ書体が入っているという意味や、MIB に言語別の新しい設定画面があるという意味ではありません。アプリでは利用可能な preset を選び、段落、結合記号、コード、表を確認します。</p>
+<h2 id="custom-preview-css">カスタム Preview CSS</h2>
+<p><strong>Preferences → Color → Download Starter CSS Template</strong> から始めます。対応する selector が載っています。編集を CSS として保存し、同じタブの <strong>Load CSS…</strong> で読み込みます。小さな上書きの方が、Web サイト全体の CSS より理解と復元が容易です。</p>
+<div class="code-example" data-code><div class="code-toolbar"><span>css</span><button type="button" class="copy-button" data-copy data-label="コピー" data-copied="コピーしました" data-error="コピーできません。ソースを選択してください">コピー</button></div><pre><code class="language-css">.preview {
+  line-height: 1.8;
+}
+
+.preview h1,
+.preview h2,
+.preview h3 {
+  line-height: 1.4;
+}
+
+.preview p {
+  margin-block: 0.8em;
+}</code></pre></div><p>行間は単位なしにして書体サイズに追従させます。表とコードのはみ出し処理を保ち、明暗両テーマで使いたければ template の色変数を優先します。</p>
+<p>読み込んだ CSS はテーマより優先されます。色が効かない、見出しが詰まるときは <strong>Clear CSS</strong> で基準を確認し、必要なルールだけ戻します。テーマ色の <code>.mib_style</code> と CSS は別の調整材料として保存してください。</p>
+</article><nav class="chapter-pagination" aria-label="章一覧"><a href="preferences.html"><span>前の章</span>Preferences 設定</a><a href="recipes.html"><span>次の章</span>実務のレシピ</a></nav><p class="source-download"><a href="../../content/ja/12-appearance.md">Markdown ソース</a></p><footer class="site-footer"><p>英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">ドキュメントリポジトリ</a><a href="../../assets/licenses/NOTICE.txt">フォントライセンス</a></nav></footer></main></div></body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Workflows, snippets and diagrams for developers who already know Markdown."><title>The supported Markdown dialect | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>English<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/markdown.html" lang="en" hreflang="en" aria-current="page">English</a><a href="../th/markdown.html" lang="th" hreflang="th">ไทย</a><a href="../ja/markdown.html" lang="ja" hreflang="ja">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">User guide</p><nav aria-label="Chapters"><a class="guide-home-link" href="index.html">Guide home</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>Install and start</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>The MIB workflow</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>Files and folders</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>Navigate and find</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>Precise editing</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>Slash snippets</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown tables</span></a></li><li><a href="markdown.html" aria-current="page"><span class="chapter-number">08</span><span>Supported Markdown</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid viewer <span class="nav-status">Upcoming Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>Preview and source</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>Appearance and fonts</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>Practical recipes</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>Keyboard reference</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>Troubleshooting</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">Interactive controls need JavaScript. All chapters and source examples remain available to read and select.</p></noscript><details class="mobile-contents"><summary>Chapters</summary><nav aria-label="Chapters"><a class="guide-home-link" href="index.html">Guide home</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>Install and start</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>The MIB workflow</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>Files and folders</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>Navigate and find</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>Precise editing</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>Slash snippets</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown tables</span></a></li><li><a href="markdown.html" aria-current="page"><span class="chapter-number">08</span><span>Supported Markdown</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid viewer <span class="nav-status">Upcoming Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>Preview and source</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>Appearance and fonts</span></a></li><li><a href="recipes.html"><span class="chapter-number">13</span><span>Practical recipes</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>Keyboard reference</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>Troubleshooting</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">08 / 15</p><h1>The supported Markdown dialect</h1><p class="chapter-availability">Released guide: v0.49.0</p></header><details class="page-outline"><summary>On this page</summary><nav><ul><li><a href="#everyday-source">Everyday source</a></li><li><a href="#links-images-and-anchors">Links, images, and anchors</a></li><li><a href="#small-mib-extras">Small MIB extras</a></li><li><a href="#code-and-html">Code and HTML</a></li><li><a href="#check-compatibility-before-sharing">Check compatibility before sharing</a></li></ul></nav></details><article class="prose" data-chapter="markdown"><p>The released app reads CommonMark plus GFM and a small set of explicit extras. Existing Markdown knowledge carries over, but a construct supported by another editor is not automatically part of MIB.</p>
+<h2 id="everyday-source">Everyday source</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="Copy" data-copied="Copied" data-error="Copy failed; select the source">Copy</button></div><pre><code class="language-markdown">## Configuration
+
+Use **bold**, *italic*, `inline code`, and ~~obsolete text~~.
+
+&gt; Keep the reason beside the decision.
+
+1. Open the note.
+2. Make the change.
+
+- [ ] Review the example
+- [x] Save the document</code></pre></div><p>Headings, lists, quotes, links, images, fenced/indented code, and horizontal rules use normal Markdown. GFM adds pipe tables, strikethrough, task lists, and autolinks. <a href="preview.html#interactive-task-lists">Tasks</a> can also be toggled directly in PREVIEW.</p>
+<h2 id="links-images-and-anchors">Links, images, and anchors</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="Copy" data-copied="Copied" data-error="Copy failed; select the source">Copy</button></div><pre><code class="language-markdown">[External reference](https://example.com)
+[Another note](./decisions.md)
+[Configuration section](#configuration)
+![Descriptive alt text](./images/architecture.svg)</code></pre></div><p>Save the current document before expecting relative references to resolve. Keep local images in its directory or a subdirectory. The released app&#39;s local-image access is intentionally scoped; a path climbing outside that directory can fail. Reopen a newly saved document if its relative assets have not acquired a usable base directory.</p>
+<p>Heading slugs preserve letters from Thai and Japanese, lower-case where applicable, remove punctuation, and turn spaces into hyphens. Give sections distinct names to make hand-written links predictable. HTTP/HTTPS links open in your browser; relative Markdown links stay in the app.</p>
+<h2 id="small-mib-extras">Small MIB extras</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>H~2~O</code></td>
+<td>Subscript</td>
+</tr>
+<tr>
+<td><code>x^2^</code></td>
+<td>Superscript</td>
+</tr>
+<tr>
+<td><code>[[Ctrl + S]]</code></td>
+<td>A keyboard chip in PREVIEW</td>
+</tr>
+<tr>
+<td><code>:smile:</code></td>
+<td>A recognized emoji shortcode</td>
+</tr>
+<tr>
+<td><code>[^note]</code> and <code>[^note]: text</code></td>
+<td>A footnote reference and definition</td>
+</tr>
+</tbody></table>
+<p>Keyboard chips contain literal text, with no nested Markdown; an unclosed or empty chip stays plain. Footnotes use definitions elsewhere in the document, rather than an inline <code>^[text]</code> form. The editor can display some extras as plain source even when PREVIEW renders them.</p>
+<h2 id="code-and-html">Code and HTML</h2>
+<p>A fenced code block&#39;s language selects syntax highlighting. Common aliases such as <code>js</code>, <code>ts</code>, <code>py</code>, and <code>sh</code> are useful. An unsupported language remains a readable plain code block. Code colors can be changed in <a href="preferences.html#code">Preferences → Code</a>.</p>
+<p><code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> provide collapsible content. HTML is sanitized: scripts and event handlers are removed, and embedded active content is restricted. Do not rely on arbitrary JavaScript, iframes, or a pasted web widget working inside a Markdown document.</p>
+<p>Inline SVG is supported within the released sanitization limits. Scripted SVG, <code>foreignObject</code>, external references, and some <code>&lt;use&gt;</code>-based drawings do not survive. A flattened, passive vector export is easier to share reliably.</p>
+<h2 id="check-compatibility-before-sharing">Check compatibility before sharing</h2>
+<p>Mermaid diagrams are <strong>upcoming</strong>; v0.49.0 shows their fenced source as code. Math rendering, wiki-links, and callout/admonition syntax are not part of the released dialect described here. Do not use this guide&#39;s website renderer as proof that a syntax extension works in your installed MIB version.</p>
+<p>For portable notes, start with ordinary Markdown, check PREVIEW, and open a representative file in the other tool your team uses. Keep the original source when trying a new renderer or extension.</p>
+</article><nav class="chapter-pagination" aria-label="Chapters"><a href="tables.html"><span>Previous</span>Markdown tables</a><a href="mermaid.html"><span>Next</span>Mermaid viewer</a></nav><p class="source-download"><a href="../../content/en/08-markdown.md">Markdown source</a></p><footer class="site-footer"><p>English, Thai and Japanese. Reference theme. Release status checked 4 November 2026.</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">Documentation repository</a><a href="../../assets/licenses/NOTICE.txt">Font licences</a></nav></footer></main></div></body></html>

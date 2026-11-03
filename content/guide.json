@@ -1,0 +1,272 @@
+{
+  "release": "v0.49.0",
+  "verified": "2026-11-04",
+  "locales": [
+    "en",
+    "th",
+    "ja"
+  ],
+  "chapters": [
+    {
+      "id": "install",
+      "file": "01-install.md",
+      "labels": [
+        "Install and start",
+        "ติดตั้งและเริ่มใช้",
+        "インストール"
+      ]
+    },
+    {
+      "id": "workflow",
+      "file": "02-workflow.md",
+      "labels": [
+        "The MIB workflow",
+        "เวิร์กโฟลว์ MIB",
+        "ワークフロー"
+      ]
+    },
+    {
+      "id": "files",
+      "file": "03-files.md",
+      "labels": [
+        "Files and folders",
+        "ไฟล์และโฟลเดอร์",
+        "ファイルとフォルダー"
+      ]
+    },
+    {
+      "id": "navigation",
+      "file": "04-navigation.md",
+      "labels": [
+        "Navigate and find",
+        "นำทางและค้นหา",
+        "移動と検索"
+      ]
+    },
+    {
+      "id": "editing",
+      "file": "05-editing.md",
+      "labels": [
+        "Precise editing",
+        "แก้ไขอย่างแม่นยำ",
+        "正確な編集"
+      ]
+    },
+    {
+      "id": "snippets",
+      "file": "06-snippets.md",
+      "labels": [
+        "Slash snippets",
+        "เมนู / และ snippet",
+        "スニペット"
+      ]
+    },
+    {
+      "id": "tables",
+      "file": "07-tables.md",
+      "labels": [
+        "Markdown tables",
+        "ตาราง Markdown",
+        "Markdown の表"
+      ]
+    },
+    {
+      "id": "markdown",
+      "file": "08-markdown.md",
+      "labels": [
+        "Supported Markdown",
+        "รูปแบบที่รองรับ",
+        "対応する記法"
+      ]
+    },
+    {
+      "id": "mermaid",
+      "file": "09-mermaid.md",
+      "labels": [
+        "Mermaid viewer",
+        "Mermaid viewer",
+        "Mermaid ビューアー"
+      ],
+      "upcoming": true
+    },
+    {
+      "id": "preview",
+      "file": "10-preview.md",
+      "labels": [
+        "Preview and source",
+        "พรีวิวกับต้นฉบับ",
+        "プレビューとソース"
+      ]
+    },
+    {
+      "id": "preferences",
+      "file": "11-preferences.md",
+      "labels": [
+        "Preferences",
+        "การตั้งค่า Preferences",
+        "Preferences 設定"
+      ]
+    },
+    {
+      "id": "appearance",
+      "file": "12-appearance.md",
+      "labels": [
+        "Appearance and fonts",
+        "รูปลักษณ์และฟอนต์",
+        "表示と書体"
+      ]
+    },
+    {
+      "id": "recipes",
+      "file": "13-recipes.md",
+      "labels": [
+        "Practical recipes",
+        "ตัวอย่างใช้งานจริง",
+        "実務のレシピ"
+      ]
+    },
+    {
+      "id": "shortcuts",
+      "file": "14-shortcuts.md",
+      "labels": [
+        "Keyboard reference",
+        "คู่มือคีย์ลัด",
+        "ショートカット"
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "file": "15-troubleshooting.md",
+      "labels": [
+        "Troubleshooting",
+        "แก้ปัญหาและสถานะ",
+        "困ったとき"
+      ]
+    }
+  ],
+  "ui": {
+    "en": {
+      "name": "English",
+      "guide": "User guide",
+      "title": "The MarkItBetter field guide.",
+      "intro": "Workflows, snippets and diagrams for developers who already know Markdown.",
+      "start": "Start with the workflow",
+      "contents": "Chapters",
+      "home": "Guide home",
+      "skip": "Skip to content",
+      "search": "Filter chapters",
+      "onPage": "On this page",
+      "previous": "Previous",
+      "next": "Next",
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyError": "Copy failed; select the source",
+      "source": "Mermaid source",
+      "fit": "Fit All",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "maximize": "Maximize example",
+      "restore": "Restore example",
+      "diagram": "Interactive guide example",
+      "diagramHelp": "Drag to pan. Use Fit All to reset; maximize fills the browser content area. These controls belong to this web guide.",
+      "released": "Released guide: v0.49.0",
+      "upcoming": "Upcoming Mermaid",
+      "availability": "Released instructions target v0.49.0. Mermaid is documented separately as upcoming development work.",
+      "upcomingNotice": "Upcoming feature: the reviewed Mermaid work and subsequent viewer revision are not in public v0.49.0.",
+      "footer": "English, Thai and Japanese. Reference theme. Release status checked 4 November 2026.",
+      "repo": "Documentation repository",
+      "licences": "Font licences",
+      "upgrade": "Free upgrades for life",
+      "homeNote": "Read the released workflow, look up a setting, or prepare a Mermaid document with its availability clearly marked.",
+      "preferencesNote": "Every released Preferences tab, its mode requirements, settings and style controls.",
+      "mermaidNote": "A major chapter covering source, names, viewing, Find, compatibility, international labels and recovery.",
+      "aboutSources": "Coverage and availability",
+      "aboutSourcesText": "Released behavior is checked against v0.49.0 source. Reviewed Mermaid development and the next controls revision remain upcoming. This guide describes app behavior; examples use synthetic content.",
+      "download": "Markdown source",
+      "result": "Rendered example",
+      "noScript": "Interactive controls need JavaScript. All chapters and source examples remain available to read and select."
+    },
+    "th": {
+      "name": "ไทย",
+      "guide": "คู่มือผู้ใช้",
+      "title": "คู่มือ MIB ฉบับใช้งานจริง",
+      "intro": "เวิร์กโฟลว์ snippet และแผนภาพ สำหรับนักพัฒนาที่คุ้นเคยกับ Markdown",
+      "start": "เริ่มจากเวิร์กโฟลว์",
+      "contents": "ทุกบท",
+      "home": "หน้าหลักคู่มือ",
+      "skip": "ข้ามไปเนื้อหา",
+      "search": "กรองชื่อบท",
+      "onPage": "ในหน้านี้",
+      "previous": "บทก่อนหน้า",
+      "next": "บทถัดไป",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว",
+      "copyError": "คัดลอกไม่ได้ กรุณาเลือกต้นฉบับ",
+      "source": "ต้นฉบับ Mermaid",
+      "fit": "Fit All",
+      "zoomIn": "ขยาย",
+      "zoomOut": "ย่อ",
+      "maximize": "ขยายตัวอย่างเต็มพื้นที่",
+      "restore": "คืนขนาดตัวอย่าง",
+      "diagram": "ตัวอย่างโต้ตอบในคู่มือ",
+      "diagramHelp": "ลากเพื่อเลื่อน กด Fit All เพื่อดูทั้งหมด และขยายเต็มพื้นที่เนื้อหาเบราว์เซอร์ ปุ่มเหล่านี้เป็นของเว็บคู่มือ",
+      "released": "คู่มือรุ่นเผยแพร่: v0.49.0",
+      "upcoming": "Mermaid ที่จะตามมา",
+      "availability": "คำแนะนำรุ่นเผยแพร่อ้างอิง v0.49.0 ส่วน Mermaid แยกเป็นงานพัฒนาที่จะตามมา",
+      "upcomingNotice": "ฟีเจอร์ที่จะตามมา: งาน Mermaid ที่ตรวจทานแล้วและ viewer รอบถัดไปยังไม่มีใน v0.49.0 สาธารณะ",
+      "footer": "อังกฤษ ไทย และญี่ปุ่น สไตล์ Reference ตรวจสถานะรุ่นเมื่อ 4 พฤศจิกายน 2026",
+      "repo": "คลังเอกสาร",
+      "licences": "ใบอนุญาตฟอนต์",
+      "upgrade": "อัปเกรดฟรีตลอดอายุการใช้งาน",
+      "homeNote": "อ่านเวิร์กโฟลว์รุ่นเผยแพร่ ค้นหาค่าตั้ง หรือเตรียมเอกสาร Mermaid โดยระบุสถานะการรองรับชัดเจน",
+      "preferencesNote": "อธิบายทุกแท็บ Preferences ในรุ่นเผยแพร่ โหมดที่ต้องใช้ ค่าตั้ง และการจัดการสไตล์",
+      "mermaidNote": "บทหลักเรื่องต้นฉบับ ชื่อ การดู ค้นหา ความเข้ากันได้ ข้อความหลายภาษา และการกู้คืน",
+      "aboutSources": "ขอบเขตและสถานะการรองรับ",
+      "aboutSourcesText": "ตรวจพฤติกรรมรุ่นเผยแพร่กับต้นฉบับ v0.49.0 ส่วนงาน Mermaid ที่ตรวจทานแล้วและปุ่มรอบถัดไปยังเป็นฟีเจอร์ที่จะตามมา ตัวอย่างในคู่มือใช้ข้อมูลสมมติ",
+      "download": "ต้นฉบับ Markdown",
+      "result": "ผลลัพธ์ตัวอย่าง",
+      "noScript": "ปุ่มโต้ตอบต้องใช้ JavaScript แต่ยังอ่านทุกบทและเลือกคัดลอกต้นฉบับได้"
+    },
+    "ja": {
+      "name": "日本語",
+      "guide": "ユーザーガイド",
+      "title": "MarkItBetter 実践ガイド",
+      "intro": "Markdown に慣れた開発者のための、ワークフロー、スニペット、図。",
+      "start": "ワークフローから始める",
+      "contents": "章一覧",
+      "home": "ガイドのホーム",
+      "skip": "本文へスキップ",
+      "search": "章名を絞り込む",
+      "onPage": "このページ",
+      "previous": "前の章",
+      "next": "次の章",
+      "copy": "コピー",
+      "copied": "コピーしました",
+      "copyError": "コピーできません。ソースを選択してください",
+      "source": "Mermaid ソース",
+      "fit": "Fit All",
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
+      "maximize": "例を最大化",
+      "restore": "例を元の大きさへ",
+      "diagram": "ガイド内の操作例",
+      "diagramHelp": "ドラッグで移動、Fit All で全体表示。最大化はブラウザーのコンテンツ領域を使います。この Web ガイド用の操作です。",
+      "released": "公開版ガイド: v0.49.0",
+      "upcoming": "今後の Mermaid",
+      "availability": "公開済み操作は v0.49.0 が対象です。Mermaid は今後の開発機能として別に説明します。",
+      "upcomingNotice": "今後の機能：レビュー済み Mermaid と次の操作改訂は公開版 v0.49.0 には含まれません。",
+      "footer": "英語・タイ語・日本語。Reference テーマ。提供状況は2026年11月4日に確認。",
+      "repo": "ドキュメントリポジトリ",
+      "licences": "フォントライセンス",
+      "upgrade": "アップグレードは生涯無料",
+      "homeNote": "公開版の操作を学び、設定を調べ、提供状況を確認しながら Mermaid 文書を準備します。",
+      "preferencesNote": "公開済み Preferences の全タブ、対象モード、設定とスタイル操作を説明。",
+      "mermaidNote": "ソース、名前、表示、検索、互換性、多言語と復帰を扱う主要な章。",
+      "aboutSources": "範囲と提供状況",
+      "aboutSourcesText": "公開済みの動作は v0.49.0 のソースと照合しています。レビュー済み Mermaid と次の操作改訂は今後の機能です。例は架空の内容を使います。",
+      "download": "Markdown ソース",
+      "result": "表示例",
+      "noScript": "操作ボタンには JavaScript が必要です。本文とソースはそのまま読んで選択できます。"
+    }
+  }
+}

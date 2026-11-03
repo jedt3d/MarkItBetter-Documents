@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-variant="reference"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Workflows, snippets and diagrams for developers who already know Markdown."><title>Recipes for real work | MarkItBetter</title><link rel="stylesheet" href="../../assets/guide.css"><script src="../../assets/site.js" defer></script></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="../../index.html">MarkItBetter</a><details class="locale"><summary>English<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><nav aria-label="Language"><a href="../en/recipes.html" lang="en" hreflang="en" aria-current="page">English</a><a href="../th/recipes.html" lang="th" hreflang="th">ไทย</a><a href="../ja/recipes.html" lang="ja" hreflang="ja">日本語</a></nav></details></header><div class="site-layout"><aside class="chapter-rail"><p class="rail-title">User guide</p><nav aria-label="Chapters"><a class="guide-home-link" href="index.html">Guide home</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>Install and start</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>The MIB workflow</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>Files and folders</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>Navigate and find</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>Precise editing</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>Slash snippets</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown tables</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>Supported Markdown</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid viewer <span class="nav-status">Upcoming Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>Preview and source</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>Appearance and fonts</span></a></li><li><a href="recipes.html" aria-current="page"><span class="chapter-number">13</span><span>Practical recipes</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>Keyboard reference</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>Troubleshooting</span></a></li></ol></nav></aside><main id="main"><noscript><p class="availability">Interactive controls need JavaScript. All chapters and source examples remain available to read and select.</p></noscript><details class="mobile-contents"><summary>Chapters</summary><nav aria-label="Chapters"><a class="guide-home-link" href="index.html">Guide home</a><ol class="chapter-links"><li><a href="install.html"><span class="chapter-number">01</span><span>Install and start</span></a></li><li><a href="workflow.html"><span class="chapter-number">02</span><span>The MIB workflow</span></a></li><li><a href="files.html"><span class="chapter-number">03</span><span>Files and folders</span></a></li><li><a href="navigation.html"><span class="chapter-number">04</span><span>Navigate and find</span></a></li><li><a href="editing.html"><span class="chapter-number">05</span><span>Precise editing</span></a></li><li><a href="snippets.html"><span class="chapter-number">06</span><span>Slash snippets</span></a></li><li><a href="tables.html"><span class="chapter-number">07</span><span>Markdown tables</span></a></li><li><a href="markdown.html"><span class="chapter-number">08</span><span>Supported Markdown</span></a></li><li><a href="mermaid.html"><span class="chapter-number">09</span><span>Mermaid viewer <span class="nav-status">Upcoming Mermaid</span></span></a></li><li><a href="preview.html"><span class="chapter-number">10</span><span>Preview and source</span></a></li><li><a href="preferences.html"><span class="chapter-number">11</span><span>Preferences</span></a></li><li><a href="appearance.html"><span class="chapter-number">12</span><span>Appearance and fonts</span></a></li><li><a href="recipes.html" aria-current="page"><span class="chapter-number">13</span><span>Practical recipes</span></a></li><li><a href="shortcuts.html"><span class="chapter-number">14</span><span>Keyboard reference</span></a></li><li><a href="troubleshooting.html"><span class="chapter-number">15</span><span>Troubleshooting</span></a></li></ol></nav></details><header class="chapter-header"><p class="chapter-position">13 / 15</p><h1>Recipes for real work</h1><p class="chapter-availability">Released guide: v0.49.0</p></header><details class="page-outline"><summary>On this page</summary><nav><ul><li><a href="#a-readme-people-can-scan">A README people can scan</a></li><li><a href="#a-short-architecture-decision">A short architecture decision</a></li><li><a href="#a-release-checklist-with-evidence">A release checklist with evidence</a></li><li><a href="#an-api-note-that-stays-maintainable">An API note that stays maintainable</a></li></ul></nav></details><article class="prose" data-chapter="recipes"><p>These starting points use portable Markdown and MIB&#39;s released editing tools. Copy the source, replace the sample facts, and check PREVIEW. Add Mermaid only when using a development/released version that actually includes its renderer.</p>
+<h2 id="a-readme-people-can-scan">A README people can scan</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="Copy" data-copied="Copied" data-error="Copy failed; select the source">Copy</button></div><pre><code class="language-markdown"># Notes service
+
+Stores project notes as Markdown files.
+
+## Quick start
+
+1. Copy the example configuration.
+2. Set the local storage directory.
+3. Start the service and check its health endpoint.
+
+## Commands
+
+| Task | Command |
+| --- | --- |
+| Run checks | `npm test` |
+| Start locally | `npm run dev` |
+
+## References
+
+- [Decisions](./decisions.md)
+- [Configuration](#configuration)
+
+## Configuration
+
+Record supported values and a minimal example here.</code></pre></div><p>The commands above are sample project commands, not MIB CLI commands. Replace them with commands your project actually provides. Use the Outline to check that the structure tells a useful story before polishing the wording.</p>
+<h2 id="a-short-architecture-decision">A short architecture decision</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="Copy" data-copied="Copied" data-error="Copy failed; select the source">Copy</button></div><pre><code class="language-markdown"># ADR: keep notes as Markdown
+
+## Context
+
+People need to review changes in version control and edit offline.
+
+## Decision
+
+Store each note as an ordinary Markdown file.
+
+## Consequences
+
+- Editors can be changed without converting document content.
+- Relative links need attention when files move.
+- Rendering extensions must be agreed by the team.
+
+## Review
+
+- [ ] Confirm the constraints with the team
+- [ ] Link the implementation discussion</code></pre></div><p>Use a separate file for each decision once the collection grows. Link related decisions rather than embedding every detail in one diagram. The <a href="mermaid.html">Mermaid chapter</a> provides a flowchart, sequence, journey, and ER starting point for the upcoming rendering workflow.</p>
+<h2 id="a-release-checklist-with-evidence">A release checklist with evidence</h2>
+<div class="code-example" data-code><div class="code-toolbar"><span>markdown</span><button type="button" class="copy-button" data-copy data-label="Copy" data-copied="Copied" data-error="Copy failed; select the source">Copy</button></div><pre><code class="language-markdown"># Release checklist
+
+- [ ] Confirm the version and intended changes
+- [ ] Run the project's checks
+- [ ] Record failures and unresolved items
+- [ ] Review the user-facing notes
+- [ ] Verify the distributed files
+
+## Validation
+
+| Check | Result | Evidence |
+| --- | --- | --- |
+| Unit tests | Pending | Add the actual report |
+| Manual workflow | Pending | Record the tested version |</code></pre></div><p>Do not convert “Pending” into “Passed” just because a command exists. Replace a status only after the check has actually run. Toggle tasks in PREVIEW while preserving the source as ordinary GFM, and use the table popup to add the evidence rows you need.</p>
+<h2 id="an-api-note-that-stays-maintainable">An API note that stays maintainable</h2>
+<p>Use a table for method/path/purpose, then one heading per endpoint with a request example, expected response, error conditions, and version assumptions. Slash-menu Link, Table, Code block, and Collapsible entries are useful building blocks. Put long sample payloads in code fences and supporting notes in <code>&lt;details&gt;</code>.</p>
+<p>Before sharing any recipe, save the document, inspect its preview, follow its relative links, and run the example commands against the system they describe. MIB formats the note; it cannot validate an external service&#39;s contract for you.</p>
+</article><nav class="chapter-pagination" aria-label="Chapters"><a href="appearance.html"><span>Previous</span>Appearance and fonts</a><a href="shortcuts.html"><span>Next</span>Keyboard reference</a></nav><p class="source-download"><a href="../../content/en/13-recipes.md">Markdown source</a></p><footer class="site-footer"><p>English, Thai and Japanese. Reference theme. Release status checked 4 November 2026.</p><nav><a href="https://github.com/jedt3d/MarkItBetter-Documents">Documentation repository</a><a href="../../assets/licenses/NOTICE.txt">Font licences</a></nav></footer></main></div></body></html>

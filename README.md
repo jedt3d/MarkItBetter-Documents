@@ -1,79 +1,98 @@
-# MarkItBetter user guide draft
+# MarkItBetter user guide
 
-The owner selected **Reference** for the online user guide.
-The root page uses that theme; the original two-style comparison remains
-available at [style-comparison.html](style-comparison.html).
-Audience: developers and power users who already know Markdown.
+English, Thai and Japanese editions of the full user guide, using the approved
+Reference theme.
 
-| Proposal | English | ไทย | 日本語 |
-| --- | --- | --- | --- |
-| Reference: cool paper and a persistent chapter index | [View](reference/en/index.html) | [ดูตัวอย่าง](reference/th/index.html) | [表示](reference/ja/index.html) |
-| Edition: warm paper and a spacious reading column | [View](edition/en/index.html) | [ดูตัวอย่าง](edition/th/index.html) | [表示](edition/ja/index.html) |
+**Live:** <https://jedt3d.github.io/MarkItBetter-Documents/>
 
-The [guide page](index.html) opens Reference. Each language has a
-separate edition and a working language switcher. The pages demonstrate style,
-navigation, an actual Mermaid-viewer screenshot, interactive diagram controls,
-and copyable slash-menu examples. They are not the complete user guide yet.
+- [English](reference/en/index.html)
+- [ภาษาไทย](reference/th/index.html)
+- [日本語](reference/ja/index.html)
 
-## Proposed table of contents
+Each edition contains fifteen complete chapters: installation, the MIB workflow,
+files, navigation/search, editing, slash snippets, tables, supported Markdown,
+Mermaid, preview/source navigation, **Preferences**, appearance, practical recipes,
+keyboard reference, and troubleshooting. Language switching keeps the current
+chapter. The home page and chapter navigation work without JavaScript.
 
-- [English](content/TABLE-OF-CONTENTS.en.md)
-- [ภาษาไทย](content/TABLE-OF-CONTENTS.th.md)
-- [日本語](content/TABLE-OF-CONTENTS.ja.md)
+## Release boundaries
 
-The fourteen-chapter outline gives Mermaid a major chapter with nine detailed
-topics. Built-in slash-menu snippets and field navigation are documented;
-the deferred custom Smart Snippets system is not presented as shipped.
+Released instructions target public **v0.49.0**, checked on 4 November 2026.
+The major Mermaid chapter distinguishes reviewed development behavior from the
+next viewer revision. Neither is represented as released in v0.49.0. It includes
+family coverage, source/title behavior, viewing and Find, international labels,
+limits, errors and recovery, plus copyable flowchart, sequence, journey and ER
+examples.
 
-## Feature and release boundaries
+The app source repository is private. Verification uses the immutable release tag
+and reviewed development revisions; private source files and working-tree edits
+are not copied into this public repository. Only newly written user-facing prose,
+synthetic examples and licensed web assets are published.
 
-The released guide targets public **v0.49.0**. The completed, independently
-reviewed Mermaid viewer is featured as a **development preview**, with its
-release boundary stated in the first screen and its chapter. It is not
-misrepresented as part of v0.49.0.
+## No screenshots in this edition
 
-The Mermaid card image is a crop of a real retained native MIB capture. Pixels
-and UI text have not been repainted. The separate browser diagram demonstrates
-guide controls; its zoom/pan controls do not claim additional MIB app controls.
-All documents and examples use synthetic content.
+Screenshots and the old design-preview images have been removed from the current
+site. They are deferred until the open app issues have been revised. The inline
+Mermaid examples are generated vector diagrams, not screenshots. Their zoom,
+pan, Fit All and browser-content maximize controls belong to this guide and are
+explicitly distinguished from the app's feature availability.
 
-Price **$13** and **free upgrades for life** are owner-supplied product copy.
-No currency conversion, subscription period, checkout URL or activation flow is
-invented.
+## Typography
 
-## Fonts and assets
+Local IBM Plex Sans for Latin, Sans Thai Looped for Thai reading text and emphasis,
+Sans Thai for large Thai headings, Sans JP for Japanese, and Mono for code and the
+price. Font licences are retained in [assets/licenses](assets/licenses/NOTICE.txt).
+Heading line-height is unitless: at least 1.2, with 1.4 for Thai/Japanese. The reader
+can use normal browser zoom; tables and source blocks contain their own overflow.
 
-IBM Plex Sans for Latin; IBM Plex Sans Thai Looped for Thai reading text and
-labels; IBM Plex Sans Thai for large Thai headings; IBM Plex Sans JP for
-Japanese; IBM Plex Mono for code and the price. Font files are local, with
-their SIL Open Font License notices in [assets/licenses](assets/licenses).
-The guide does not fetch fonts from a CDN.
+Price **$13** and **free upgrades for life** are owner-supplied copy. No currency
+conversion, checkout destination, subscription or activation process is invented.
 
-Heading line-height is unitless and scales with its font: at least **1.2** for
-all headings, **1.4** for Thai and Japanese. Desktop and phone hero overrides
-use the same token. A fixed `1.2rem` would be too small for large headings.
+## Edit and build
 
-## Local preview
+Use Node 22 or later. The only build dependency is MIT-licensed `marked@17.0.5`,
+pinned in the lockfile; no Markdown or Mermaid JavaScript runtime ships to readers.
 
 ```sh
+npm ci
+npm run build
 python3 -m http.server 4177 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:4177/`. The pages are static and also work as files;
-clipboard availability follows the browser's secure-context rules.
+Open <http://127.0.0.1:4177/>. Edit chapter Markdown under `content/en`, `content/th`
+and `content/ja`. `content/guide.json` defines the common chapter order and interface
+copy. A heading suffix such as `{#content-width}` sets a stable cross-language
+anchor in the generated site. Source examples remain copyable without rewriting
+their text.
 
-`python3 tools/build_demo.py` regenerates the Reference home, six localized demo pages and
-the three Markdown outlines. `tools/render_diagrams.mjs` prepares the sample
-SVGs using the public Mermaid11.17.2 browser bundle named by `MERMAID_JS`;
-the published static pages do not need the Mermaid runtime.
+`npm run build` writes the static chapter pages, guide homes, contents files, and
+redirects from the retired Edition/comparison routes. Keep all three editions in
+sync when changing a feature or availability statement.
 
-## GitHub Pages publication
+## Regenerate diagram examples
 
-Site: <https://jedt3d.github.io/MarkItBetter-Documents/>.
-Pages publishes the repository root from `main`. The site is already static;
-`.nojekyll` skips Jekyll processing, and no custom build workflow is needed.
-Push approved changes to `main` to update the site.
+`content/examples.json` is the source for nine localized vector examples. Ordinary
+builds use the committed SVGs. To regenerate them, serve the site locally and run:
 
-The current publication is the approved Reference style draft and proposed
-chapter plan, not the complete user guide. Keep development features clearly
-marked and refresh release boundaries and screenshots as the guide is completed.
+```sh
+MERMAID_JS=/path/to/mermaid-11.17.2/mermaid.min.js node tools/render_diagrams.mjs
+npm run build
+```
+
+The renderer uses the existing `puppeteer-core` installation under
+`HALLMARK_SKILL` (default `~/.agents/skills/hallmark`) and Chrome. Set `CHROME_PATH`
+for another Chrome location. The Mermaid bundle is an authoring input, not a
+published runtime. It renders trusted, synthetic sources after fonts are ready.
+
+## Verify and publish
+
+With the local server running, `npm run check` validates links/anchors, complete
+editions, fonts, heading spacing, copy behavior, diagram controls, and content with
+JavaScript disabled. Browser checks use the same existing Puppeteer/Chrome setup.
+`GUIDE_BASE_URL` selects the deployed site for live verification; reports go under
+ignored `.hallmark/`. `GUIDE_CAPTURE=1` retains internal inspection captures only.
+
+Pages publishes the root of `main`. `.nojekyll` skips Jekyll processing; no custom
+build workflow is required. Build and verify locally, inspect the staged files,
+then push the static files and source. Confirm the deployed commit and live
+behavior after publication. This repository does not build or release the MIB app.

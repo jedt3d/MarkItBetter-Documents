@@ -26,13 +26,13 @@ for (const group of document.querySelectorAll('[data-tabs]')) {
 }
 for (const button of document.querySelectorAll('[data-copy]')) {
   button.addEventListener('click', async () => {
-    const code = button.closest('.snippet-panel').querySelector('pre code').textContent;
+    const code = button.closest('[data-code]').querySelector('pre code').textContent;
     try {
       await navigator.clipboard.writeText(code);
       button.textContent = button.dataset.copied;
     } catch {
       const range = document.createRange();
-      range.selectNodeContents(button.closest('.snippet-panel').querySelector('pre code'));
+      range.selectNodeContents(button.closest('[data-code]').querySelector('pre code'));
       const selection = window.getSelection();selection.removeAllRanges();selection.addRange(range);
       button.textContent = button.dataset.error;
     }
@@ -111,7 +111,7 @@ for (const example of document.querySelectorAll('[data-diagram]')) {
     if(!example.classList.contains('is-maximized'))return;
     if(event.key==='Escape'){event.preventDefault();event.stopPropagation();restore();}
     if(event.key==='Tab'){
-      const items=[...example.querySelectorAll('button,summary,[tabindex="0"]')].filter(e=>e.getClientRects().length);
+      const items=[...example.querySelectorAll('button,summary,[tabindex="0"]')].filter(e=>e.checkVisibility({checkVisibilityCSS:true}));
       const first=items[0],last=items.at(-1);
       if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
       else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
